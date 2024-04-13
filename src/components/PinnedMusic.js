@@ -18,7 +18,7 @@ function PinnedMusic() {
   if (!pinnedMusic) {
     return (
       <div className="text-center">
-        <h3 className="py-5 text-lg font-poppins">Loading...</h3>
+        <h3 className="py-5 text-lg font-poppins">You don't have any pinned music yet!</h3>
       </div>
     );
   }
