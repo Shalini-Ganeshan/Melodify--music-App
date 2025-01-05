@@ -148,7 +148,7 @@ function App() {
         
       </div>
       <div className="bottom-0 left-0 w-full text-center text-gray-500">
-        <p>Copyrights 2024 © Melodify.com</p>
+        <p>Copyrights 2026 © Melodify.com</p>
       </div>
 
 
