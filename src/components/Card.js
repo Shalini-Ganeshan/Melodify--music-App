@@ -45,13 +45,13 @@ function Card({ element }) {
   };
 
   useEffect(() => {
-    const localLikedMusic = JSON.parse(localStorage.getItem("likedMusic")) || []; // Handle null case
+    const localLikedMusic = JSON.parse(localStorage.getItem("likedMusic")) || [];
     setlikedMusic(localLikedMusic);
   }, [setlikedMusic]);
 
   return (
 
-    <div className="lg:w-full md:w-1/2 w-full p-2 flex flex-col">
+    <div className="lg:w-1/2 md:w-1/2 w-full p-2 flex flex-col">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full hover:scale-95 transition-transform duration-300 border-2 border-red-500">
         <div className="aspect-w-16 aspect-h-8">
           <img
@@ -62,13 +62,13 @@ function Card({ element }) {
         </div>
 
         <div className="p-4 flex-grow">
-          <h5 className="text-lg   h-8 overflow-hidden font-poppins">{element.name}</h5>
+          <h5 className="text-sm   h-8 overflow-hidden font-poppins">{element.name}</h5>
         
           <div className="flex flex-row">
-        <p className="text-black font-bold text-sm mr-2">Artist:</p><p className="text-sm text-gray-600"> {element.album.artists[0].name}</p>    
+        <p className="text-black font-bold text-sm mr-2">Artist:</p><p className="text-xs text-gray-600"> {element.album.artists[0].name}</p>    
         </div>  
         <div className="flex flex-row">  
-          <p className="text-black font-bold text-sm mr-2">Release date:</p> <p className="text-sm text-gray-600"> {element.album.release_date}</p>
+          <p className="text-black font-bold text-sm mr-2">Release date:</p> <p className="text-xs text-gray-600"> {element.album.release_date}</p>
           </div>  
           <audio src={element.preview_url} controls className="w-full border-2 border-black rounded-full mt-1"></audio>
         </div>
