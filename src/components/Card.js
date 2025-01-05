@@ -62,7 +62,7 @@ function Card({ element }) {
         </div>
 
         <div className="p-4 flex-grow">
-          <h5 className="text-sm   h-8 overflow-hidden font-poppins">{element.name}</h5>
+          <h5 className="text-sm   h-4 overflow-hidden font-poppins">{element.name}</h5>
         
           <div className="flex flex-row">
         <p className="text-black font-bold text-sm mr-2">Artist:</p><p className="text-xs text-gray-600"> {element.album.artists[0].name}</p>    
@@ -70,7 +70,7 @@ function Card({ element }) {
         <div className="flex flex-row">  
           <p className="text-black font-bold text-sm mr-1">Release date:</p> <p className="text-xs text-gray-600"> {element.album.release_date}</p>
           </div>  
-          <audio src={element.preview_url} controls className="w-full border-2 border-black rounded-full mt-1"></audio>
+          <audio src={element.preview_url} controls className="w-full border-2 border-black rounded-full "></audio>
         </div>
         <div className="flex justify-center items-center">
           <div className="flex items-center">
