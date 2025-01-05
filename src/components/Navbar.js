@@ -59,7 +59,7 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
           </div>
         </div>
         <div className="container mx-auto px-4">
-          <div className="flex justify-center">
+          <div className="flex justify-center md:text-sm">
             <input
               value={keyword}
               onChange={(event) => setKeyword(event.target.value)}
