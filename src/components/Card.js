@@ -68,11 +68,11 @@ function Card({ element }) {
         <p className="text-black font-bold text-sm mr-2">Artist:</p><p className="text-xs text-gray-600"> {element.album.artists[0].name}</p>    
         </div>  
         <div className="flex flex-row">  
-          <p className="text-black font-bold text-sm mr-2">Release date:</p> <p className="text-xs text-gray-600"> {element.album.release_date}</p>
+          <p className="text-black font-bold text-sm mr-1">Release date:</p> <p className="text-xs text-gray-600"> {element.album.release_date}</p>
           </div>  
           <audio src={element.preview_url} controls className="w-full border-2 border-black rounded-full mt-1"></audio>
         </div>
-        <div className="flex justify-center items-center h-12">
+        <div className="flex justify-center items-center">
           <div className="flex items-center">
             {pinnedMusic.some((item) => item.id === element.id) ? (
               <button onClick={handlePin} className="text-gray-500">
