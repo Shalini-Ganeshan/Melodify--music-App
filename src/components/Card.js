@@ -68,7 +68,7 @@ function Card({ element }) {
             </p>    
           </div>  
           <div className="flex flex-row">  
-            <p className="text-black font-bold text-sm ">Release date:</p> 
+            <p className="text-black font-bold text-sm ">Release:</p> 
             <p className="text-xs text-gray-600"> {element.album.release_date}</p>
           </div>  
           <audio src={element.preview_url} controls className="w-full border-2 border-black rounded-full "></audio>
