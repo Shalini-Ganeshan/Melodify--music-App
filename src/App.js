@@ -55,9 +55,6 @@ function App() {
   };
 
   useEffect(() => {
-    
-
-    // current client credentials will be deleted in few days
     const fetchToken = async () => {
       try {
         const response = await fetch("https://accounts.spotify.com/api/token", {
@@ -102,7 +99,7 @@ function App() {
             <span className="sr-only">Loading...</span>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
           {tracks.map((element) => {
             return <Card key={element.id} element={element} />;
           })}
