@@ -51,7 +51,7 @@ function Card({ element }) {
 
   return (
 
-    <div className="lg:w-1/2 md:w-1/2 w-full p-2 flex flex-col">
+    <div className="lg:w-1/2 h-1/2 md:w-1/2 w-full p-2 flex flex-col">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full hover:scale-95 transition-transform duration-300 border-2 border-red-500">
         <div className="aspect-w-16 aspect-h-8">
           <img
