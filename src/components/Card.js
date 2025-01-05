@@ -62,9 +62,9 @@ function Card({ element }) {
         <div className="p-4 flex-grow">
           <h5 className="text-sm h-4 overflow-hidden font-poppins font-bold mb-1">{element.name}</h5>
           <div className="flex flex-row">
-            <p className="text-black  text-sm mr-2">Artist:</p>
-            <p className="text-xs text-gray-600 overflow-hidden max-w-xs">
-              {element.album.artists[0].name}
+            <p className="text-black  text-sm mr-2 ">Artist:</p>
+           <p className="text-xs text-gray-600 overflow-hidden whitespace-nowrap max-w-xs text-ellipsis">
+    {element.album.artists[0].name}
             </p>    
           </div>  
           <div className="flex flex-row">  
