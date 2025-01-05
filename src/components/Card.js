@@ -51,7 +51,7 @@ function Card({ element }) {
   return (
     <div className="lg:w-full h-full md:w-1/2 w-full p-2 flex flex-col">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full hover:scale-95 transition-transform duration-300 border-2 border-red-500">
-        <div className="aspect-w-16 aspect-h-8">
+        <div className="aspect-w-16 aspect-h-6">
           <img
             src={element.album.images[0].url}
             className="object-cover object-center w-full h-full"
@@ -68,7 +68,7 @@ function Card({ element }) {
             </p>    
           </div>  
           <div className="flex flex-row">  
-            <p className="text-black font-bold text-sm ">Release:</p> 
+            <p className="text-black font-bold text-sm mr-2 ">Release:</p> 
             <p className="text-xs text-gray-600"> {element.album.release_date}</p>
           </div>  
           <audio src={element.preview_url} controls className="w-full border-2 border-black rounded-full "></audio>
